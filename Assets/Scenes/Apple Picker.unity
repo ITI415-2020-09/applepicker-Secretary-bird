@@ -232,8 +232,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d684192372278dd4c83fc756ef2808ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  applePrefab: {fileID: 0}
-  speed: 1
+  applePrefab: {fileID: 1634531201752062754, guid: 1df3c5c9cf64c134f8eab415c4b3d31e, type: 3}
+  speed: 5
   leftAndRightEdge: 20
   chanceToChangeDirections: 0.02
   secondsBetweenAppleDrops: 1
@@ -248,6 +248,7 @@ GameObject:
   - component: {fileID: 1468922556}
   - component: {fileID: 1468922555}
   - component: {fileID: 1468922554}
+  - component: {fileID: 1468922557}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -320,6 +321,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1468922557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468922553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8314096f49e43604c823f597c5eb78bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  basketPrefab: {fileID: 8915840084903790615, guid: 034763ab2d8d0c8499260ba14b02d976, type: 3}
+  numBaskets: 3
+  basketBottomY: -14
+  basketSpacingY: 2
 --- !u!1001 &560705155296027514
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -374,6 +391,34 @@ PrefabInstance:
     - target: {fileID: 4684825039615752834, guid: db8e1ea5b4ea15b46a1d4b846ecc2714, type: 3}
       propertyPath: m_Name
       value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 4684825039615752834, guid: db8e1ea5b4ea15b46a1d4b846ecc2714, type: 3}
+      propertyPath: m_TagString
+      value: AppleTree
+      objectReference: {fileID: 0}
+    - target: {fileID: 4684825039615752834, guid: db8e1ea5b4ea15b46a1d4b846ecc2714, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6240001984293517376, guid: db8e1ea5b4ea15b46a1d4b846ecc2714, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912880350616846232, guid: db8e1ea5b4ea15b46a1d4b846ecc2714, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8205537248065529482, guid: db8e1ea5b4ea15b46a1d4b846ecc2714, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8277848257151658208, guid: db8e1ea5b4ea15b46a1d4b846ecc2714, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8279079560955321985, guid: db8e1ea5b4ea15b46a1d4b846ecc2714, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db8e1ea5b4ea15b46a1d4b846ecc2714, type: 3}
